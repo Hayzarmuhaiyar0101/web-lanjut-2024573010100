@@ -95,7 +95,7 @@ database, username database, password database.
 
 12.**.gitignore dan .gitattributes**
 File konfigurasi git.
-
+web
 13.**artisan**
 Memungkinkan anda untuk menjalankan perintah artisan dari command line.
 
