@@ -43,7 +43,8 @@ Tuliskan langkah-langkah yang sudah dilakukan, sertakan potongan kode dan screen
 - Tambahkan route pada routes/web.php.
 buka folder routes/web.php
 kemudian isi dengan kode berikut:
-![Berikut Gambarnya](gambar/web.png)
+![Berikut Gambarnya](gambar/web`.png)
+![ini gambarnua](gambar/web.png)
 route ini akan memberitahu laravel untuk memanggil method show() yang ada di dalam file WelcomeController ketika user mengunjungi /welcome.
 
 - Buat controller WelcomeController.
