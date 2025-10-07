@@ -60,11 +60,12 @@ class UIController extends Controller
         return view('profile', compact('theme', 'user'));
     }
 
-    public function switchTheme($theme, Request $request)
-    {
-        if (in_array($theme, ['light', 'dark'])) {
-            session(['theme' => $theme]);
-        }
-        return back();
+   public function switchTheme($theme, Request $request)
+{
+    if (in_array($theme, ['light', 'dark'])) {
+        session(['theme' => $theme]);
     }
+
+    return back();
+}
 }

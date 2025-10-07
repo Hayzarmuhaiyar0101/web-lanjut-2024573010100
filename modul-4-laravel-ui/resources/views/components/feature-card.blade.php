@@ -1,5 +1,10 @@
-<div>
-   <div class="card feature-card h-100 {{ $theme === 'dark' ? 'bg-secondary text-white' : '' }}">
+@php
+    $theme = $theme ?? 'light';
+    $title = $title ?? '';
+    $description = $description ?? '';
+    $icon = $icon ?? '⭐';
+@endphp
+<div class="card feature-card h-100 {{ $theme === 'dark' ? 'bg-secondary text-white' : '' }}">
     <div class="card-body">
         <div class="d-flex align-items-center mb-3">
             <span class="fs-2 me-3">{{ $icon ?? '⭐' }}</span>
@@ -10,6 +15,4 @@
             <span class="badge {{ $theme === 'dark' ? 'bg-light text-dark' : 'bg-dark' }}">{{ $badge }}</span>
         @endif
     </div>
-</div>
-
 </div>

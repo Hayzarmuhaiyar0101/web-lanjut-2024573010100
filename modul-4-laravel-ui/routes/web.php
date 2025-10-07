@@ -8,6 +8,4 @@ Route::get('/contact', [UIController::class, 'contact'])->name('contact');
 Route::get('/profile', [UIController::class, 'profile'])->name('profile');
 Route::get('/switch-theme/{theme}', [UIController::class, 'switchTheme'])->name('switch-theme');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+

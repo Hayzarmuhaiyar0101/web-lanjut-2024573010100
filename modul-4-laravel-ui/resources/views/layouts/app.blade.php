@@ -41,6 +41,8 @@
     </div>
     
     <!-- Footer menggunakan Blade Component -->
+     @include('components.footer', ['theme' => $theme])
+
     <x-footer :theme="$theme" />
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

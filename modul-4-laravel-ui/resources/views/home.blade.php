@@ -12,6 +12,7 @@
             <div class="row mt-5">
                 <div class="col-md-4 mb-4">
                     <x-feature-card 
+                    :theme="$theme"
                         title="Partial Views"
                         icon="📁"
                         description="Gunakan @include untuk reusable UI components dengan data sederhana."
@@ -20,6 +21,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <x-feature-card 
+                    :theme="$theme"
                         title="Blade Components" 
                         icon="🧩"
                         description="Komponen Blade dengan props dan slots untuk UI yang lebih kompleks."
@@ -28,6 +30,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <x-feature-card 
+                    :theme="$theme"
                         title="Theme Switching"
                         icon="🎨"
                         description="Toggle antara light dan dark mode dengan session persistence."
