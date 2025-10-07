@@ -10,3 +10,6 @@ route::prefix('admin')->group(function () {
     route::get('/users/{id})',[UserController::class, 'show'])->name('admin.users.show');
 });
 
+Route::get('/', function () {
+    return view('welcome');
+    });
