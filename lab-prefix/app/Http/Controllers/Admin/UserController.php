@@ -10,11 +10,10 @@ class UserController extends Controller
     {
         $users = ['Ria', 'Lie', 'Jon'];
         return view('admin.users.index', compact ('users'));
-        
     }
 
     public function show($id)
-    {
+{
         $user = "user #" . $id;
         return view('admin.users.show', compact('user'));
     }
