@@ -3,16 +3,20 @@
 **Nama:** Hayzar Muhaiyar  
 **NIM:** 2024573010100
 **Kelas:** TI-2C
+
 ---
+
 ## Abstrak 
+
 Laporan ini membahas penerapan Controller pada framework Laravel 12 dalam konteks arsitektur Model-View-Controller (MVC). Tujuan dari praktikum ini adalah untuk memahami peran controller sebagai penghubung antara model dan view, serta bagaimana controller mengatur logika aplikasi, menangani request pengguna, dan mengembalikan response yang sesuai. Melalui tiga percobaan praktikum — menangani request dan response, penggunaan route grouping, serta penerapan prefix dan namespace — mahasiswa diharapkan mampu membangun struktur aplikasi web yang lebih terorganisir, efisien, dan mudah dikembangkan. Hasil akhir dari praktikum ini menunjukkan bahwa controller berperan penting dalam mengelola alur data dan tampilan aplikasi secara terstruktur di Laravel.
+
 ---
 ## 1. Dasar Teori
--Apa Itu Controller
+1. Apa Itu Controller
 Dalam pola MVC (Model-View-Controller), sebuah controller bertindak sebagai jembatan antara model dan view. Controller menangani input pengguna, berinteraksi dengan model untuk data, dan mengembalikan respons yang benar, yang seringkali merender sebuah view.
--Jelaskan fungsi utama Controller dalam arsitektur MVC pada Laravel.
+2. Jelaskan fungsi utama Controller dalam arsitektur MVC pada Laravel.
 Controller berfungsi sebagai penghubung antara Model dan View. Ia menangani logika bisnis aplikasi, menerima permintaan (request) dari pengguna melalui route, memproses data menggunakan model (jika diperlukan), dan mengirimkan hasilnya ke view untuk ditampilkan.
--Sebutkan dan jelaskan tiga jenis controller yang ada di Laravel.
+- Sebutkan dan jelaskan tiga jenis controller yang ada di Laravel.
 1. Basic Controllers (Controller Dasar)
 2. Resource Controllers (Controller Sumber Daya)
 3. Invokable Controllers (Controller yang Dapat Dipanggil)
@@ -31,12 +35,12 @@ code .
 - Langkah 2: Buat sebuah Controller
 php artisan make:controller DemoController
 Kemudian isi dengan kode berikut:
-![ini gambarnya](gambar/DemoController.png)
+![ini gambarnya](gambar/DemoController.png) 
 
 - Langkah 3: Definisikan Rute
 Edit routes/web.php:
 Kemudian Isi Dengan Code Berikut
-![ini gambarnua](gambar/Web.php.png.png)
+![ini gambarnua](gambar/Web.php.png)
 - Langkah 4: Buat View Sederhana
 Buat file Blade berikut di resources/views/:
 Hello.blade.php
@@ -45,10 +49,12 @@ Search.blade.php
 ![ini gambarnua](gambar/Hello.png)
 ![ini gambarnua](gambar/greet.png)
 ![ini gambarnya](gambar/search.png)
-
 Screenshot Hasil:
+- Hasil Hello.blade.php
 ![Hasil](gambar/Hasilhello.png) 
+- Hasil Greet.blade.php
 ![Hasil](gambar/Hasilgreet.png)
+- Hasil Search.blade.php
 ![Hasil](gambar/Hasilsearch.png)
 
 2.2 Praktikum 2 – Menggunakan Group Route
@@ -80,8 +86,10 @@ Kemudian Isi Dengan Code Berikut :
 Screenshot Hasil:
 HasilHome
 ![HasilHome](gambar3/HasilHome%20(1).png) 
+
 HasilAbout
 ![HasilAbout](gambar3/HasilAbout.png) 
+
 HasilContact
 ![HasilContact](gambar3/HasilContact.png)
 
@@ -109,9 +117,8 @@ Selanjutnya Isi Code Berikut Untuk UsersController.php
 Langkah 5: 
 Buat View Sederhana
 Buat folder dan file di bawah resources/views/admin/. Kemudian, buat file-file berikut:
-
-dashboard.blade.php
-users/index.blade.php
+- dashboard.blade.php
+- users/index.blade.php
 
 Isi Code Berikut pada Dashboard.blade.php
 ![Dashboard.blade.php](gambar3/Dashboard.php3.png)
@@ -125,30 +132,30 @@ isi dengan code berikut
 ![Show.blade.php](gambar3/show.php3.png)
 
 Screenshot Hasil:
-Hasil Admin Dashboard
+
+- Hasil Admin Dashboard
 ![Show.blade.php](gambar3/HasilAdminDashboard.png)
-Hasil Admin Users
+
+- Hasil Admin Users
 ![Show.blade.php](gambar3/HasilUserList.png)
-Hasil Users Detail
+
+- Hasil Users Detail
 ![Show.blade.php](gambar3/HasilDetails.png)
+
 ---
+
 ## 3. Hasil dan Pembahasan
 Jelaskan apa hasil dari praktikum yang dilakukan.
-
 Pada praktikum ini telah dibuat beberapa controller di Laravel untuk menangani request dan menampilkan view.
-
-Praktikum 1: DemoController berhasil menampilkan halaman hello, greet, dan search sesuai route.
-
-Praktikum 2: Menggunakan Route Group dengan PageController, halaman home, about, dan contact tampil dengan baik dan struktur route lebih rapi.
-
-Praktikum 3: Penerapan prefix dan namespace berhasil memisahkan area admin (DashboardController dan UserController) dari user biasa, dengan hasil tampilan dashboard dan daftar user yang sesuai.
+- Praktikum 1: DemoController berhasil menampilkan halaman hello, greet, dan search sesuai route.
+- Praktikum 2: Menggunakan Route Group dengan PageController, halaman home, about, dan contact tampil dengan baik dan struktur route lebih rapi.
+- Praktikum 3: Penerapan prefix dan namespace berhasil memisahkan area admin (DashboardController dan UserController) dari user biasa, dengan hasil tampilan dashboard dan daftar user yang sesuai.
 
 Secara keseluruhan, controller berfungsi menghubungkan route, logika aplikasi, dan tampilan secara terstruktur.
 
 ---
 ## 4. Kesimpulan
 
-Tulis kesimpulan dari praktikum ini
 Dalam bab ini, kita telah membahas dasar-dasar controller di Laravel 12, termasuk cara membuatnya, mendefinisikan rute, dan meneruskan data ke view. Kita juga mengeksplorasi berbagai jenis controller, seperti resource controller dan invokable controller, serta mempelajari cara mengelompokkan rute untuk organisasi yang lebih baik.
 
 Kita juga membahas cara menangani permintaan, memvalidasi input, dan mengembalikan berbagai jenis respons. Terakhir, kita menyelesaikan lab praktik untuk memperkuat konsep-konsep ini dengan membuat aplikasi web sederhana yang mendemonstrasikan penanganan permintaan dan pengelompokan rute.
@@ -157,8 +164,6 @@ Bab ini berfungsi sebagai fondasi untuk memahami bagaimana controller bekerja da
 
 ---
 ## 5. Referensi
-Cantumkan sumber yang Anda baca (buku, artikel, dokumentasi) — minimal 2 sumber. Gunakan format sederhana (judul — URL).
-
 - https://hackmd.io/@mohdrzu/H1sB73dnxg
 - chatgpt.com
 

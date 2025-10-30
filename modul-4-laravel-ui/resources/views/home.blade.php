@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Home - Integrated Demo')
-
 @section('content')
 <div class="row">
     <div class="col-12">

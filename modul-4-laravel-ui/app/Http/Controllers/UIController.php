@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 class UIController extends Controller
 {
     public function home(Request $request)
@@ -17,10 +14,8 @@ class UIController extends Controller
             'Bootstrap 5',
             'Responsive Design'
         ];
-        
         return view('home', compact('theme', 'alertMessage', 'features'));
     }
-
     public function about(Request $request)
     {
         $theme = session('theme', 'light');
@@ -35,10 +30,8 @@ class UIController extends Controller
             ['name' => 'Deva', 'role' => 'DevOps Engineer'],
             ['name' => 'Faqriadi Andika', 'role' => 'Project Lead']
         ];
-        
         return view('about', compact('theme', 'alertMessage', 'team'));
     }
-
     public function contact(Request $request)
     {
         $theme = session('theme', 'light');
@@ -48,10 +41,8 @@ class UIController extends Controller
             'Billing',
             'General Inquiry'
         ];
-        
         return view('contact', compact('theme', 'departments'));
     }
-
     public function profile(Request $request)
     {
         $theme = session('theme', 'light');
@@ -61,16 +52,13 @@ class UIController extends Controller
             'join_date' => '2024-01-15',
             'preferences' => ['Email Notifications', 'Dark Mode', 'Newsletter']
         ];
-        
         return view('profile', compact('theme', 'user'));
     }
-
    public function switchTheme($theme, Request $request)
 {
     if (in_array($theme, ['light', 'dark'])) {
         session(['theme' => $theme]);
     }
-
     return back();
 }
 }
