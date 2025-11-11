@@ -52,45 +52,48 @@ Praktikum 1: Menangani Request Dan Response View Di laravel 12
 
 - Langkah 2: Setup Routes
   Buka Routes/Web.php Dan isi dengan code berikut
-  ![Web.php](Gambar/Web.php.png)
+  ![Web.php](Gambar/Web.php1.png)
 
 - Langkah 3: Buat Controller
   Jalankan Perintah Berikut Di terminal:
   php artisan make:controller FormController
   Isi Dengan Code Berikut
-  ![FormController](gambar/dasarbladeController.png)
+  ![FormController](gambar/FormController.png)
 
 - Langkah 4: Buat View Form
   Buat File Baru di Direktori resources/views/form.blade.php:
   Isi Dengan Code Berikut
-  ![Form.blade.php](gambar/dasar.blade.php.png)
+  ![Form.blade.php](gambar/Form.blade.1.png)
 
 - Langkah 5: Buat View Hasil
   Pada Direktori resources/view buat file bernama Result.blade.php
-  ![result.blade.php](Gambar/Hasil1.png)
+  ![result.blade.php](Gambar/Result.blade.1.png)
 
 - Jalankan Aplikasi Dengan cara :
   Jalankan php artisan serve di terminal,
   Kemudian Kunjungi: http://localhost:8000/form dan test formnya.
   Hasil Form
-  ![Hasil Form](Gambar/Hasil1.png)
+  ![Hasil Form](Gambar/Hasil.Form.1.png)
   Hasil Result
-  ![Hasil Result](Gambar/Hasil1.png)
+  ![Hasil Result](Gambar/Hasil.Result.1.png)
 
 Praktikum 2: Validasi Kustom dan Pesan Error di Laravel 12
 
 - Langkah 1: Tambahkan route baru
   Buka routes/web.php dan tambahkan:
-  ![Web.php](Gambar/Web.php.png)      
+  ![Web.php](Gambar/Web.php1.png)      
 
 - Langkah 2: Buat Sebuah Controller Baru
   Jalankan Ini di terminal:
-  php artisan make:controller RegisterController   
+  php artisan make:controller RegisterController
+  Kemudian Isi dengan Code Berikut:
+  ![RegisterController.php](Gambar/RegisterController.png)  
+
 
 - Langkah 3: Buat Blade View
   Buat file view Di direktori resources/views/Register.blade.php:
   Kemudian Isi Dengan Code Berikut:
-  ![Register.blade.php](Gambar/Logic.blade.png)   
+  ![Register.blade.php](Gambar/Register.Blade.png)   
 
 - Langkah 4: Jalankan Aplikasi
   Jalankan Server Pengembangan Dengan jalankan ini di terminal:
@@ -98,7 +101,7 @@ Praktikum 2: Validasi Kustom dan Pesan Error di Laravel 12
 
   Akses aplikasi di:
   http://127.0.0.1:8000/register untuk test form. 
-  ![Hasil](Gambar/Hasil2.png)
+  ![Hasil](Gambar/Hasil.Register.2.png)
 
 Praktikum 3: Multi-Step Form Submission dengan Session Data
 
@@ -109,43 +112,43 @@ Praktikum 3: Multi-Step Form Submission dengan Session Data
 
 - Langkah 2: Buat Layout Dasar
   Buka Direktori resources/view/layouts Bikin file bernama app.blade.php Kemudian isi dengan code berikut:
-  ![app.blade.php](Gambar/Web.php.png)      
+  ![app.blade.php](Gambar/app.blade.3.png)      
 
 - Langkah 3:Buat Routes
   Buka File routes/web.php dan definisikan routes untuk setiap langkah form:  
   Isikan Kode Berikut
-  ![Web.php](Gambar/PageController.png)       
+  ![Web.php](Gambar/web.php.3.png.png)       
     
 - Langkah 4: Buat Controller 
   Jalankan Perintah ini di dalam terminal:
   php artisan make:controller MultiStepFormController
   Kemudian Isi dengan code berikut
-  ![MultiController](Gambar/AppBlade.png)
+  ![MultiController](Gambar/MultiStepController.png)
 
 - Langkah 5: Buat view untuk Setiap Step
   Buat direktori resources/views/multistep
 - Step 1 - Informasi Pribadi
   resources/views/multistep/step1.blade.php
   Dan Isi dengan Code Berikut:
-  ![Step1.blade.php](Gambar/AdminDashboard.png)
+  ![Step1.blade.php](Gambar/step1.blade.php)
 - Step 2 - Informasi Pendidikan:
   resources/views/multistep/step2.blade.php
   Dan Isi dengan Code Berikut:
-  ![Step2.blade.php](Gambar/AdminDashboard.png)
+  ![Step2.blade.php](Gambar/step2.blade.php)
 - Step 3 - Pengalaman Kerja:
   resources/views/multistep/step3.blade.php
   Dan Isi dengan Code Berikut:
-  ![Step3.blade.php](Gambar/AdminDashboard.png)
+  ![Step3.blade.php](Gambar/step3.blade.php)
   
   Summary - Ringkasan:
   resources/views/multistep/summary.blade.php
   Dan Isi dengan Code Berikut:
-  ![Summary.blade.php](Gambar/AdminDashboard.png)
+  ![Summary.blade.php](Gambar/summary.blade.png)
 
   Complete - Selesai:
   resources/views/multistep/complete.blade.php
   Dan Isi dengan Code Berikut:
-  ![complete.blade.php](Gambar/AdminDashboard.png)
+  ![complete.blade.php](Gambar/complete.png)
 
 - Langkah 6: Jalankan Aplikasi
 Setelah Menyelesaikan Langkah - langkah di 👆
@@ -157,45 +160,41 @@ Step 2: Isi informasi pendidikan (tingkat pendidikan, institusi, tahun lulus, ju
 Step 3: Isi pengalaman kerja (pekerjaan saat ini, perusahaan, pengalaman, keahlian)
 Summary: Lihat ringkasan data dan konfirmasi
 Complete: Tampilan sukses
-
-![Hasil](Gambar/AdminDashboard.png)
-
+![Step1](Gambar/HasilStep1.png)
+![Step2](Gambar/HasilStep2.png)
+![Step3](Gambar/HasilStep3.png)
+![Summary](Gambar/HasilStep4.png)
+![Complete](Gambar/HasilComplete.png)
 
 ---
 
 ## 3. Hasil dan Pembahasan
 
-Jelaskan apa hasil dari praktikum yang dilakukan.
-Pada Praktikum 4 ini, Anda telah berhasil:
-
-- Membuat aplikasi Laravel lengkap dengan multiple pages
-- Mengimplementasikan Partial Views menggunakan @include directive
-- Membuat dan menggunakan Blade Components dengan props dan slots
-- Mengembangkan sistem Theme Switching dengan session persistence
-- Menggunakan Bootstrap 5 untuk responsive design
-- Membuat perbandingan langsung antara partial views vs components
-- Menerapkan best practices dalam struktur view Laravel
-
-Aplikasi ini menunjukkan bagaimana ketiga konsep (partial views, Blade components, dan theme switching) dapat bekerja bersama dalam satu project yang kohesif dan mudah dipelihara.
+Dari praktikum ini diperoleh hasil bahwa proses form submission di Laravel dapat berjalan dengan baik menggunakan metode POST dan ditangani oleh controller untuk menampilkan data ke view.
+Penerapan validasi data berhasil mencegah input yang tidak sesuai dengan aturan, serta menampilkan pesan error secara otomatis di halaman form.
+Pada percobaan multi-step form, data berhasil disimpan antar langkah menggunakan session, dan ditampilkan kembali pada halaman ringkasan sebelum dikirim.
+Secara keseluruhan, praktikum ini menunjukkan bahwa Laravel menyediakan fitur lengkap untuk menangani form, validasi, dan keamanan data dengan efisien.
 
 ---
 
 ## 4. Kesimpulan
+Dari praktikum Modul 5: Form Submission & Data Validation, dapat disimpulkan bahwa proses pengiriman data melalui form dan validasi merupakan bagian penting dalam pembuatan aplikasi web berbasis Laravel.
+Melalui praktikum ini, mahasiswa memahami bagaimana:
+- Membuat form HTML yang terhubung dengan route dan controller pada Laravel.
+- Menggunakan metode HTTP seperti POST untuk mengirimkan data ke server.
+- Menerapkan validasi data menggunakan $request->validate() agar data yang diterima sesuai dengan aturan yang ditentukan.
+- Menggunakan Form Request Validation untuk memisahkan logika validasi dari controller sehingga kode menjadi lebih bersih dan     mudah dikelola.
+- Memanfaatkan CSRF Protection guna menjaga keamanan form dari serangan berbahaya.
+- Menerapkan multi-step form dengan session untuk mengelola data dari beberapa tahap input pengguna.
 
-Dari praktikum ini dapat disimpulkan bahwa Blade Template Engine merupakan komponen penting dalam framework Laravel untuk memisahkan logika dan tampilan aplikasi.
-Beberapa hal penting yang dipelajari antara lain:
-- Blade mempermudah pembuatan tampilan dinamis melalui sintaks sederhana.
-- Penggunaan layout dan inheritance mempercepat proses pembuatan halaman dengan struktur yang konsisten.
-- Partial view dan component meningkatkan efisiensi dan konsistensi kode tampilan.
-- Integrasi dengan Bootstrap menjadikan hasil tampilan lebih menarik dan responsif.
-
-Secara keseluruhan, praktikum ini membantu mahasiswa memahami pentingnya arsitektur terstruktur dalam pengembangan aplikasi web modern menggunakan Laravel.
+Dengan penerapan konsep-konsep tersebut, aplikasi web menjadi lebih aman, terstruktur, user-friendly, dan efisien dalam memproses data dari pengguna.
 
 ---
 
 ## 5. Referensi
-- chatgpt.com
-- https://hackmd.io/@mohdrzu/r1AIUzWpll#Praktikum-4---Partial-Views-Blade-Components-dan-Theme-Switching-di-Laravel-12
-https://laravel.com/docs
+- https://hackmd.io/@mohdrzu/HJWzYp7Reg
+- Chatgpt.com
+- Laravel Documentation — https://laravel.com/docs/12.x/validation
+- SantriKoding — Belajar Laravel: Validasi Data di Laravel — https://santrikoding.com/
 
 ---

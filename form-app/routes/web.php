@@ -11,3 +11,4 @@ Route::get('/', function () {
     Route::get('/result', [FormController::class, 'showResult'])->name('form.result');
     Route::get('/register', [RegisterController::class, 'showForm'])->name('register.show');
     Route::post('/register', [RegisterController::class, 'handleForm'])->name('register.handle');
+ 

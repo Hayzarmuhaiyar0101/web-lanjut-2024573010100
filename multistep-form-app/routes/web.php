@@ -15,4 +15,3 @@ Route::post('/multistep/complete', [MultiStepFormController::class, 'complete'])
 Route::get('/', function () {
     return view('welcome');
 });
-
