@@ -11,9 +11,6 @@ class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
         User::create([
@@ -30,9 +27,9 @@ class DatabaseSeeder extends Seeder
         ]);
         User::create([
             'name' => 'General User',
-            'email' => 'User@ilmudata.id',
+            'email' => 'user@ilmudata.id',
             'password' => Hash::make('password123'),
-            'role' => 'User',
+            'role' => 'user',
         ]);
 
         User::factory()->create([

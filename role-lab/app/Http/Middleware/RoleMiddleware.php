@@ -10,10 +10,10 @@ class RoleMiddleware
 {
     public function handle(Request $request, Closure $next, string $role): Response
     {
-        if ($request->user() && $request->user()->role === $role) {
-        return $next($request);
-    }
+        if ($request->user() && strtolower($request->user()->role ?? '') === strtolower($role)) {
+            return $next($request);
+        }
 
-    abort(403, 'Unauthorized');
-    }   
+        abort(403, 'Unauthorized');
+    }
 }
