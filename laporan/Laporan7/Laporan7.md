@@ -195,7 +195,7 @@ Jalankan Perintah Berikut untuk membuat model Product dan migrasi:
  - php artisan make:model Product -m
 Perbarui file migrasi database/migration/xxx_create_products_table.php:
 dengan code berikut:
-- ![product_table.php2](Gambar/web.php.3.png.png)
+- ![product_table.php2](Gambar/Create.product.table.png)
 Kemudian Jalankan migrasi dengan cara ketik perintah ini di terminal:
  - php artisan migrate
 
@@ -203,19 +203,19 @@ Membuat Seeder untuk Data Dummy
 Jalankan Perintah berikut di terminal:
  - php artisan make:seeder ProductSeeder
  Kemudian buka file yang di hasilkan dan Perbarui:
- - ![ProductSeeder.php2](Gambar/web.php.3.png.png)
+ - ![ProductSeeder.php2](Gambar/ProductSeeder.png)
 
 Kemudian Update file product.php buka file app/Models/product.php dan perbarui:
- - ![Product.php](Gambar/web.php.3.png.png)
+ - ![Product.php](Gambar/Product.php.png)
 
 Buat factory untuk model Product dengan menjalankan perintah berikut:
  - php artisan make:factory ProductFactory --model=Product 
 
 kemudian buka file yang dihasilkan dan perbarui:
-- ![ProductFactory.php](Gambar/web.php.3.png.png)
+- ![ProductFactory.php](Gambar/ProductFactory.png)
 
 Selanjutnya modifikasi file DatabaseSeeder.php 
-- ![HasilPosts](Gambar/web.php.3.png.png)
+- ![Databaseseeder](Gambar/DataBaseSeeder2.png)
 dan jalankan perintah:
  - php artisan db:seed
 
@@ -224,22 +224,24 @@ Langkah 5: Membuat Controller Untuk Paginasi
 Jalankan Perintah ini di terminal untuk membuat Controller:
  - php artisan make:controller ProductCotroller
 Kemudian Edit file ProductController.php dengan isi code berikut:
-- ![ProductController](Gambar/web.php.3.png.png)
+- ![ProductController](Gambar/ProductController.png)
 
 Langkah 6: Definisikan Route
 Buka File routes/web.php dan tambahkan code berikut:
-- ![HasilPosts](Gambar/web.php.3.png.png)
+- ![HasilPosts](Gambar/Web.php2.png)
 
 Langkah 7: Membuat View Untuk Daftar Produk dengan Paginasi
  Buat Folder Product di resources/view dan bikin file baru di dalam folder Product dengan nama index.blade.php
  isi dengan code berikut:
- - ![Index.blade.php2](Gambar/web.php.3.png.png)
+ - ![Index.blade.php2](Gambar/Index.blade.2.png)
 
 Langkah 8: Menjalankan Dan Menguji 
 Setelah menyelesaikan seluruh langkah - langkah tersebut, Kemudian kita jalankan perintah berikut
  - php artisan serve
  dan kunjungi:
 - http://localhost:8000/products
+
+- ![HasilProduct](Gambar/HasilProducts.png)
 
 ---
 
